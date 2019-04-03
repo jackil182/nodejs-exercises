@@ -40,7 +40,6 @@ function filterByQuery(param, arr) {
 
 function filterByCategory(paramsStr, arr) {
   const paramsArr = paramsStr.split(',');
-
   return paramsArr.map(par => arr.filter(el => el.categories.includes(par)));
 }
 
